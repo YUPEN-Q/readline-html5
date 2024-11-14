@@ -1,26 +1,26 @@
 const terser = require('@rollup/plugin-terser')
-
+const path = require("path")
 const pkg = require("./package.json")
 
 const { name, version } = pkg
-// const dist_name = name + "-" + version
+const basename = path.basename(name)
 
 module.exports = {
     input: 'src/main.js',
     output: [{
-        file: 'dist/' + name + '.mjs',
+        file: 'dist/' + basename + '.mjs',
         format: 'es'
     }, {
-        file: 'dist/' + name + '.min.mjs',
+        file: 'dist/' + basename + '.min.mjs',
         format: 'es',
         plugins: [terser()]
     }, {
-        name: name,
-        file: 'dist/' + name + '.umd.js',
+        name: basename,
+        file: 'dist/' + basename + '.umd.js',
         format: 'umd',
     }, {
-        name: name,
-        file: 'dist/' + name + '.umd.min.js',
+        name: basename,
+        file: 'dist/' + basename + '.umd.min.js',
         format: 'umd',
         plugins: [terser()]
     }]

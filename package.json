@@ -1,13 +1,13 @@
 {
-    "name": "readline5",
+    "name": "@yupen-q/readline",
     "version": "0.1.1",
-    "description": "readline5 is a library for reading lines from various inputs via the HTML5 API.",
+    "description": "readline is a library for reading lines from various inputs via the HTML5 API.",
     "author": "YUPEN<yupenq@gmail.com>",
-    "homepage": "https://github.com/YUPEN-Q/readline5",
-    "bugs": "https://github.com/YUPEN-Q/readline5/issues",
+    "homepage": "https://github.com/YUPEN-Q/readline",
+    "bugs": "https://github.com/YUPEN-Q/readline/issues",
     "repository": {
         "type": "git",
-        "url": "https://github.com/YUPEN-Q/readline5.git"
+        "url": "https://github.com/YUPEN-Q/readline.git"
     },
     "license": "MIT",
     "devDependencies": {
@@ -20,8 +20,8 @@
         "README.md",
         "LICENSE"
     ],
-    "main": "dist/readline5.umd.js",
-    "module": "dist/readline5.mjs",
+    "main": "dist/readline.umd.js",
+    "module": "dist/readline.mjs",
     "private": false,
     "engines": {
         "node": ">=14.0.0"
